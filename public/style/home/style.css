@@ -1,0 +1,180 @@
+  /* Hero Section */
+  .hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+  }
+
+  .hero-slider {
+      width: 100%;
+      height: 100%;
+  }
+
+  .swiper-slide {
+      position: relative;
+      overflow: hidden;
+  }
+
+  /* Hero Background dengan Border Radius */
+  .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 0 0 30px 30px;
+      /* Border radius hanya di bagian bawah */
+      transition: transform 0.8s ease, border-radius 0.8s ease;
+  }
+
+  /* Efek zoom smooth pada background */
+  .swiper-slide-active .hero-bg {
+      transform: scale(1.05);
+      border-radius: 0 0 30px 30px;
+  }
+
+  /* Container untuk konten */
+  .container_hero {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+  }
+
+  .row {
+      width: 100%;
+  }
+
+  .col-lg-10 {
+      width: 83.333333%;
+  }
+
+  /* Konten Hero */
+  .hero-content {
+      color: white;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      max-width: 600px;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: all 0.8s ease 0.3s;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .swiper-slide-active .hero-content {
+      transform: translateY(0);
+      opacity: 1;
+  }
+
+  .sub-title {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #f8f9fa;
+      font-weight: 500;
+      letter-spacing: 1px;
+  }
+
+  h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      margin-bottom: 25px;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 30px;
+      background: linear-gradient(45deg, #3a86ff, #4361ee);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(58, 134, 255, 0.4);
+  }
+
+  .hero-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(58, 134, 255, 0.6);
+  }
+
+  .hero-btn i {
+      margin-left: 10px;
+      transition: transform 0.3s ease;
+  }
+
+  .hero-btn:hover i {
+      transform: translateX(5px);
+  }
+
+  /* Navigasi Swiper */
+  .swiper-button-next,
+  .swiper-button-prev {
+      color: white;
+      background: rgba(255, 255, 255, 0.2);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      backdrop-filter: blur(5px);
+      transition: all 0.3s ease;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+      font-size: 20px;
+      font-weight: bold;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: scale(1.1);
+  }
+
+  /* Pagination Swiper */
+  .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: rgba(255, 255, 255, 0.5);
+      opacity: 1;
+      transition: all 0.3s ease;
+  }
+
+  .swiper-pagination-bullet-active {
+      background: white;
+      transform: scale(1.2);
+  }
+
+  /* Responsif */
+  @media (max-width: 768px) {
+      h1 {
+          font-size: 2rem;
+      }
+
+      .hero-content {
+          padding: 30px;
+          max-width: 100%;
+      }
+
+      .hero-bg {
+          border-radius: 0 0 20px 20px;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+          display: none;
+      }
+  }
+
+
+
