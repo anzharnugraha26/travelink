@@ -37,7 +37,7 @@
                         $delay = ($index % 4) * 0.2 + 0.2;
                     @endphp
 
-                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="{{ $delay }}s">
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp d-flex" data-wow-delay="{{ $delay }}s">
                         <div class="destination-card-items">
                             <div class="destination-image">
                                 @if ($coliving->image)
@@ -65,7 +65,7 @@
                                     </li>
                                 </ul>
                                 <h5>
-                                    <a href="#">
+                                    <a href="{{ url('places/' . $coliving->id) }}">
                                         {{ $coliving->name }}
                                     </a>
 
@@ -84,7 +84,7 @@
                                     <h6 style="font-size: 15px">
                                         Rp{{ number_format($coliving->current_price, 0, ',', '.') }}<span>/bulan</span>
                                     </h6>
-                                    <a href="#" class="theme-btn style-2">
+                                    <a href="{{ url('places/' . $coliving->id) }}" class="theme-btn style-2">
                                         Book
                                         <i class="fa-sharp fa-regular fa-arrow-right"></i>
                                     </a>
@@ -122,7 +122,33 @@
                     <div class="swiper-slide">
                         <div class="destination-category-item">
                             <div class="category-image">
-                                <img src="assets/img/destination/category1.jpg" alt="img">
+                                <img src="{{asset('image/coliving/rooms/1a.webp')}}" alt="img">
+                                <div class="category-content">
+                                    <h5>
+                                        <a href="destination-details.html">Adventure</a>
+                                    </h5>
+                                    <p>6 Tour</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-category-item">
+                            <div class="category-image">
+                                <img src="{{asset('image/coliving/rooms/2a.webp')}}" alt="img">
+                                <div class="category-content">
+                                    <h5>
+                                        <a href="destination-details.html">Adventure</a>
+                                    </h5>
+                                    <p>6 Tour</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="destination-category-item">
+                            <div class="category-image">
+                                <img src="{{asset('image/coliving/rooms/3a.webp')}}" alt="img">
                                 <div class="category-content">
                                     <h5>
                                         <a href="destination-details.html">Adventure</a>
@@ -762,7 +788,7 @@
     </section>
 
     <!-- Cta-bg-Section Start -->
-    <section class="cta-bg-section fix bg-cover" style="background-image: url(assets/img/cta-bg.jpg);">
+    <section class="cta-bg-section fix bg-cover" style="background-image: url({{ asset('image/bg2.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="cta-wrapper">

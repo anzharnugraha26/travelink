@@ -31,12 +31,12 @@
                     <div class="mega-menu-wrapper">
                         <div class="header-main">
                             <div class="logo">
-                                <a href="index.html" class="header-logo">
-                                    <img src="assets/img/logo/white-log.svg" alt="logo-img">
+                                <a href="{{ url('/')}}" class="header-logo">
+                                    <img src="{{ asset('image/logos.png') }}" alt="logo-img">
                                 </a>
                                 <div class="logo-2">
-                                    <a href="index.html">
-                                        <img src="assets/img/logo/black-logo.svg" alt="">
+                                    <a href="{{ url('/')}}">
+                                        <img src="{{ asset('image/logos.png') }}" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -45,84 +45,13 @@
                                     <div class="main-menu">
                                         <nav id="mobile-menu">
                                             <ul>
-                                                <li class="has-dropdown active menu-thumb">
-                                                    <a href="index.html">
-                                                        Home
-                                                        <i class="fa-solid fa-chevron-down"></i>
-                                                    </a>
-                                                    <ul class="submenu has-homemenu">
-                                                        <li>
-                                                            <div class="homemenu-items">
-                                                                <div class="homemenu">
-                                                                    <div class="homemenu-thumb">
-                                                                        <img src="assets/img/header/home-1.jpg" alt="img">
-                                                                        <div class="demo-button">
-                                                                            <a href="index.html" class="theme-btn">
-                                                                                Multi Page
-                                                                            </a>
-                                                                            <a href="index-one-page.html" class="theme-btn">
-                                                                                One Page
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="homemenu-content text-center">
-                                                                        <h4 class="homemenu-title">
-                                                                            Tour Booking
-                                                                        </h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="homemenu">
-                                                                    <div class="homemenu-thumb mb-15">
-                                                                        <img src="assets/img/header/home-2.jpg" alt="img">
-                                                                        <div class="demo-button">
-                                                                            <a href="index-2.html" class="theme-btn">
-                                                                                Multi Page
-                                                                            </a>
-                                                                            <a href="index-two-page.html" class="theme-btn">
-                                                                                One Page
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="homemenu-content text-center">
-                                                                        <h4 class="homemenu-title">
-                                                                            Travel Booking
-                                                                        </h4>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="homemenu">
-                                                                    <div class="homemenu-thumb mb-15">
-                                                                        <img src="assets/img/header/home-3.jpg" alt="img">
-                                                                        <div class="demo-button">
-                                                                            <a href="index-3.html" class="theme-btn">
-                                                                                Multi Page
-                                                                            </a>
-                                                                            <a href="index-three-page.html" class="theme-btn">
-                                                                                One Page
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="homemenu-content text-center">
-                                                                        <h4 class="homemenu-title">
-                                                                            Flight Booking
-                                                                        </h4>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="has-dropdown active d-xl-none">
-                                                    <a href="team.html" class="border-none">
-                                                    Home
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="index.html">Home 01</a></li>
-                                                        <li><a href="index-2.html">Home 02</a></li>
-                                                        <li><a href="index-3.html">Home 03</a></li>
-                                                    </ul>
-                                                </li>
                                                 <li>
-                                                    <a href="about.html">About Us</a>
+                                                    <a href="{{ url('/') }}">Home</a>
+                                                </li>
+
+
+                                                <li>
+                                                    <a href="about.html">Kerjasama Travelink</a>
                                                 </li>
                                                 <li>
                                                     <a href="destination-details.html">
@@ -130,13 +59,13 @@
                                                         <i class="fa-solid fa-chevron-down"></i>
                                                     </a>
                                                     <ul class="submenu">
-                                                        <li><a href="destination.html">our Destination</a></li>
-                                                        <li><a href="destination-details.html">Destination Details</a></li>
+                                                        <li><a href="destination.html">Lihat Semua kerjasama</a></li>
+                                                        <li><a href="destination-details.html">Coliving</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <a href="tour-details.html">
-                                                        Tour
+                                                        Travelink Corporate
                                                         <i class="fa-solid fa-chevron-down"></i>
                                                     </a>
                                                     <ul class="submenu">
@@ -144,30 +73,7 @@
                                                         <li><a href="tour-details.html">Tour Details</a></li>
                                                     </ul>
                                                 </li>
-                                                <li class="has-dropdown">
-                                                    <a href="news.html">
-                                                        Pages
-                                                        <i class="fa-solid fa-chevron-down"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="activities.html">Activities</a></li>
-                                                        <li><a href="activities-details.html">Activities Details</a></li>
-                                                        <li><a href="team.html">Our Team</a></li>
-                                                        <li><a href="team-details.html">Team Details</a></li>
-                                                        <li><a href="faq.html">Our Faq</a></li>
-                                                    </ul>
-                                                </li>
-                                               <li>
-                                                    <a href="news-details.html">
-                                                        Blog
-                                                        <i class="fa-solid fa-chevron-down"></i>
-                                                    </a>
-                                                    <ul class="submenu">
-                                                        <li><a href="news.html">Blog Grid</a></li>
-                                                        <li><a href="news-classic.html">Blog Classic</a></li>
-                                                        <li><a href="news-details.html">Blog Details</a></li>
-                                                    </ul>
-                                                </li>
+
                                                 <li>
                                                     <a href="contact.html">Contact Us</a>
                                                 </li>
@@ -176,7 +82,7 @@
                                     </div>
                                 </div>
 
-                                <a href="contact.html" class="theme-btn"> Request A Quote <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
+                                <a href="contact.html" class="theme-btn"> Masuk/Daftar <i class="fa-sharp fa-regular fa-arrow-right"></i></a>
                                 <div class="header__hamburger d-xl-none my-auto">
                                     <div class="sidebar__toggle">
                                         <i class="fas fa-bars"></i>

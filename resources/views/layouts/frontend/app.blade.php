@@ -129,15 +129,15 @@
         @yield('content')
 
         <!-- Footer Section Start -->
-        <footer class="footer-section fix bg-cover" style="background-image: url(assets/img/footer/footer-bg.jpg);">
+        <footer class="footer-section fix bg-cover" style="background-image: url({{asset('image/bg.jpeg')}});">
             <div class="container">
                 <div class="footer-widget-wrapper-new">
                     <div class="row">
                         <div class="col-xl-4 col-lg-5 col-md-8 col-sm-6 wow fadeInUp wow" data-wow-delay=".2s">
                             <div class="single-widget-items text-center">
                                 <div class="widget-head">
-                                    <a href="index.html">
-                                        <img src="assets/img/logo/white-log.svg" alt="img">
+                                    <a href="{{ url('/') }}">
+                                        <img src="{{ asset('image/logos.png') }}" alt="img">
                                     </a>
                                 </div>
                                 <div class="footer-content">
